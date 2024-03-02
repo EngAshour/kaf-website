@@ -150,3 +150,12 @@ nav {
 .nav-item {
   text-align: center;
 }
+
+.row > * {
+  padding: 0px;
+}
+
+aside {
+  max-width: 296px;
+}
+
