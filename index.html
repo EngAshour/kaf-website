@@ -21,6 +21,152 @@
     <link href="/CSS/style.css" rel="stylesheet" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/main-logo.svg" alt="main logo"
+        /></a>
+        <div class="tabs" id="navbarNav">
+          <ul class="navbar-nav d-flex justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <img
+                  class="navbar-tab-icon"
+                  src="/assets/ShoppingCartSimple.svg"
+                  alt="ShoppingCartSimple"
+                />
+                <div>Auctions</div></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  class="navbar-tab-icon"
+                  src="/assets/Trophy.svg"
+                  alt="Trophy"
+                />
+                <div>Contests</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  class="navbar-tab-icon"
+                  src="/assets/Briefcase.svg"
+                  alt="Briefcase"
+                />
+                <div>Project</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  class="navbar-tab-icon"
+                  src="/assets/portfolios.svg"
+                  alt="portfolios"
+                />
+                <div>Portfolios</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  class="navbar-tab-icon"
+                  src="/assets/UsersThree.svg"
+                  alt="UsersThree"
+                />
+                <div>Freelancers</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  class="navbar-tab-icon"
+                  src="/assets/Chats.svg"
+                  alt="Chats"
+                />
+                <div>Forum</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-between account position-relative">
+          <img src="/assets/msg.svg" alt="msg icon" />
+          <img src="/assets/notification.svg" alt="notification icon" />
+          <img
+            id="profilePic"
+            src="/assets/profile-pic.svg"
+            alt="account profile picture"
+          />
+          <div
+            id="accountMenu"
+            class="account-menu position-absolute bottom-0 hide"
+          >
+            <div
+              style="margin: 17px 1px 9px 15px"
+              class="d-flex align-items-center"
+            >
+              <img
+                style="margin-inline-end: 10px"
+                src="/assets/account-menu-img.png"
+                alt="account-menu-img"
+              />
+              <div class="account-name">
+                <p class="name">Ahmed Ali</p>
+                <p class="job">Student</p>
+              </div>
+            </div>
+            <hr />
+            <div class="myprofile-box d-flex gap-2">
+              <img src="/assets/UserCircle.svg" alt="UserCircle" />
+              <span>My Profile</span>
+            </div>
+            <hr />
+            <div class="middle-box d-flex flex-column">
+              <div class="dark-mode-box d-flex">
+                <img src="assets/Moon.svg" alt="Moon" />
+                <span style="line-height: 26px">Dark Mode</span>
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckChecked"
+                  />
+                </div>
+              </div>
+              <div class="language-box d-flex">
+                <img src="assets/Translate.svg" alt="Translate" />
+                <span style="line-height: 26px" class="flex-grow-1"
+                  >Language</span
+                >
+                <img src="assets/arabic.svg" alt="arabic-icon" />
+              </div>
+              <div class="acc-settings d-flex">
+                <img src="assets/GearSix.svg" alt="GearSix-icon" />
+                <span style="line-height: 26px">Account Settings</span>
+              </div>
+            </div>
+            <hr />
+            <div class="logout-box d-flex">
+              <img src="assets/SignOut.svg" alt="SignOut-icon" />
+              <span style="line-height: 26px">LogOut</span>
+            </div>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

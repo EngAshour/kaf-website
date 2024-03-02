@@ -8,3 +8,145 @@
   --grey-800: #333333;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fdfdfd;
+  font-family: Montserrat;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+hr {
+  color: var(--grey-50);
+  margin: 0;
+  opacity: 1;
+}
+
+nav {
+  background-color: var(--white-bg);
+  box-shadow: 0px 4px 26px 0px #c8c8c88c;
+  margin-block-end: 64px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.navbar-tab-icon {
+  margin-block-end: 8px;
+}
+
+.active {
+  color: var(--primary-green) !important;
+}
+
+.account {
+  width: 147px;
+  cursor: pointer;
+
+  .account-menu {
+    transition: all 250ms ease-in-out;
+    box-shadow: 0px 5px 15px 0px #00000033;
+    background-color: #ffffff;
+    cursor: default;
+    width: 320px;
+    height: 291px;
+    top: calc(100% + 10px);
+    right: 0px;
+    border-radius: 8px;
+    .myprofile-box {
+      cursor: pointer;
+      margin: 12px 0px 12px 12px;
+    }
+
+    .middle-box {
+      gap: 14px;
+      margin-inline-start: 12.25px;
+      margin-inline-end: 14px;
+    }
+
+    .dark-mode-box {
+      margin-block-start: 5px;
+      span {
+        flex-grow: 1;
+        margin-inline-start: 7.75px;
+      }
+    }
+    .language-box {
+      align-items: center;
+      span {
+        cursor: pointer;
+        margin-inline-start: 8px;
+      }
+    }
+    .acc-settings {
+      align-items: center;
+      margin-block-end: 12px;
+      span {
+        cursor: pointer;
+        margin-inline-start: 8px;
+      }
+    }
+    .logout-box {
+      cursor: pointer;
+      align-items: center;
+      margin: 12px 0px 20px 12px;
+      color: #f56342;
+      span {
+        margin-inline-start: 8px;
+      }
+    }
+  }
+
+  .account-name {
+    .name {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17px;
+      letter-spacing: 0em;
+      color: #1e1e1e;
+    }
+    .job {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: -0.15000000596046448px;
+      color: var(--grey-400);
+    }
+  }
+  .form-check {
+    margin-inline-end: -7px;
+  }
+  .form-check-input:checked {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+  }
+  .form-check-input {
+    cursor: pointer;
+    background-color: white;
+    border-color: var(--grey-400);
+  }
+  .form-check-input:focus {
+    box-shadow: none;
+  }
+  .form-check-input:focus {
+    --bs-form-switch-bg: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 8 8"%3e%3ccircle r="3" fill="%238692a6"/%3e%3c/svg%3e');
+  }
+}
+
+.tabs {
+  width: 699px;
+}
+
+.nav-item {
+  text-align: center;
+}
