@@ -255,3 +255,31 @@ aside {
   }
 }
 
+/* Description Box */
+.description {
+  margin-block-end: 48px;
+
+  h3 {
+    color: #000000;
+    margin-block-end: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0.005em;
+  }
+
+  p {
+    max-width: 896px;
+    margin: 0;
+    padding: 32px 14px 32px 20px;
+    background-color: white;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    box-shadow: 0px 3px 40px -5px #20202012;
+    border-radius: 15px;
+  }
+}
+
