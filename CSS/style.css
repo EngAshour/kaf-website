@@ -159,3 +159,32 @@ aside {
   max-width: 296px;
 }
 
+.service-title {
+  color: var(--grey-500);
+}
+
+.catagory {
+  color: var(--grey-400);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+}
+
+.service-title p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0.005em;
+  color: #000000;
+  margin-block: 24px;
+}
+
+.service-title span i {
+  font-size: 24px;
+  margin-inline-end: 5.88px;
+}
+
+.service-title strong {
+  margin-inline-start: 4.22px;
+}
