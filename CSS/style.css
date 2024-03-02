@@ -418,3 +418,111 @@ aside {
   text-align: center;
 }
 
+/* Service Rating */
+
+.service-rating-container {
+  .title {
+    margin-block-end: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0.005em;
+  }
+
+  .rating-overview {
+    max-width: 896px;
+    padding: 30px 37px 30px 20px;
+    box-shadow: 0px 3px 40px -5px #20202012;
+    border-radius: 15px;
+  }
+
+  .cat {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    margin-block-end: 24px;
+  }
+
+  .progress-number {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.005em;
+  }
+
+  /* Review */
+  .review-section {
+    padding-block: 30px 30px;
+    padding-inline: 21px 38px;
+    margin-block-end: 48px;
+    background-color: white;
+    border-radius: 15px;
+
+    .review {
+      gap: 10px;
+
+      &:nth-child(2) {
+        margin-block: 16px;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: var(--grey-800, #333333);
+      }
+
+      .reviewer-name {
+        margin-top: 1px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+      }
+
+      .review-dot {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: -0.15000000596046448px;
+        color: #86869e;
+      }
+
+      .review-date {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: -0.15000000596046448px;
+        color: #8692a6;
+      }
+    }
+
+    .review-form {
+      gap: 24px;
+      margin-block-start: 64px;
+
+      form {
+        width: 100%;
+      }
+
+      .review-text-area {
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        min-height: 168px;
+        border-radius: 8px;
+        background-color: var(--grey-50, #f6f6f6);
+        width: 100%;
+        margin-block-end: 16px;
+        letter-spacing: 0.005em;
+        padding: 24px 16px;
+        resize: none;
+        border: none;
+        color: var(--grey-400, #8692a6);
+      }
+    }
+  }
+}
+
