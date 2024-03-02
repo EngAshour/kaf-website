@@ -345,3 +345,76 @@ aside {
   }
 }
 
+/* Purchase Service */
+
+.purchase-service-container {
+  margin-block-end: 111.89px;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0.005em;
+    margin-block-end: 24px;
+  }
+}
+
+.purchase-service-body {
+  padding: 30.89px 20px 29.11px 20px;
+  box-shadow: 0px 3px 40px -5px #20202012;
+  border-radius: 15px;
+
+  button {
+    max-width: 185px;
+    flex-grow: 1;
+  }
+}
+
+.purchase-service-counter {
+  max-width: 607px;
+  flex-grow: 1;
+}
+
+.counter,
+.price {
+  background-color: var(--grey-50);
+  border-radius: 8px;
+}
+
+.counter {
+  padding-block: 10px;
+  max-width: 414px;
+  flex-grow: 1;
+  text-align: center;
+  gap: 65px;
+
+  span {
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  i {
+    background-color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    color: var(--primary-green);
+  }
+}
+
+.price {
+  padding-block: 13px 12px;
+  max-width: 185px;
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.005em;
+  text-align: center;
+}
+

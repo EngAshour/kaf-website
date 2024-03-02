@@ -20,6 +20,11 @@ const silderDots = sliderDotsBox.querySelectorAll("button");
 const selectAllBtn = document.querySelector(".select-all");
 const arrAddons = Array.from(document.getElementsByClassName("addonsbtn"));
 
+const minus = document.getElementById("minus");
+const plus = document.getElementById("plus");
+const counterValue = document.getElementById("counterValue");
+const price = document.getElementById("price");
+
 // Account Menu Logic
 
 profile.addEventListener("click", () => {
@@ -82,3 +87,21 @@ Array.from(arrAddons).forEach((addon) => {
   });
 });
 
+// counter logic
+
+function calcPrice(value) {
+  price.innerHTML = `$${value * 100}`;
+}
+
+minus.addEventListener("click", () => {
+  if (counterValue.innerHTML === "0") return;
+  const value = Number(counterValue.innerHTML) - 1;
+  counterValue.innerHTML = value;
+  calcPrice(value);
+});
+
+plus.addEventListener("click", () => {
+  const value = Number(counterValue.innerHTML) + 1;
+  counterValue.innerHTML = value;
+  calcPrice(value);
+});
