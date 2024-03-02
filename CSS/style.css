@@ -188,3 +188,70 @@ aside {
 .service-title strong {
   margin-inline-start: 4.22px;
 }
+
+.slider {
+  margin-block: 40px;
+  margin-inline-start: 23px;
+  margin-inline-end: 22px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: -65px;
+}
+
+.carousel-control-next {
+  right: -65px;
+}
+
+.carousel-control-arrow {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0px 3px 3px 1px #2020200d;
+
+  i {
+    font-size: 23px;
+    padding: 12px;
+  }
+}
+
+.carousel-control-arrow.active {
+  background-color: white;
+
+  i {
+    color: #1dbf73;
+  }
+}
+
+.carousel-control-arrow.disable {
+  background-color: #ffffff66;
+
+  i {
+    color: white;
+  }
+}
+
+.carousel-indicators {
+  margin-bottom: 0.25rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: white !important;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.carousel-indicators {
+  button.active {
+    background-color: #1dbf73 !important;
+  }
+}
+
