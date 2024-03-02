@@ -526,3 +526,268 @@ aside {
   }
 }
 
+/* Side Section */
+.side-section {
+  padding: 18px 19px;
+  margin-block-end: 32px;
+  background-color: white;
+  box-shadow: 0px 3px 40px -5px #20202012;
+  border-radius: 8px;
+}
+
+.side-section .seller-name {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+}
+
+.side-section .seller-name span {
+  line-height: 19px;
+}
+
+.location-container {
+  color: var(--grey-400);
+  margin-block-start: 8.5px;
+  margin-block-end: 14px;
+}
+
+.side-section .seller-location {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+}
+
+.rating-value {
+  margin-inline-start: 10px;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--grey-500);
+}
+
+.side-section h3 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+  margin-block-end: 22px;
+}
+
+.info-section span {
+  margin-inline-start: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.005em;
+}
+
+.info-section h3 {
+  margin-block-end: 22px;
+}
+
+.info-section div {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.005em;
+}
+
+.profile-icon-container {
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+}
+
+.primary {
+  background: #1dbf73 !important;
+  border-color: #1dbf73 !important;
+}
+
+.other-services {
+  margin-block: 32px;
+
+  & h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+    color: var(--grey-900, #1e1e1e);
+    margin-bottom: 24px;
+  }
+}
+
+.btn-variant {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.005em;
+  color: var(--grey-300, #c3c5c8);
+  background: transparent;
+  border: none;
+  margin-bottom: 24px;
+}
+
+.services-card {
+  box-shadow: 0px 3px 40px -5px #20202012;
+  background: var(--bg-grey-900, #fdfdfd);
+  border-radius: 8px;
+
+  &:not(:last-child) {
+    margin-block-end: 10px;
+  }
+}
+
+.card-info {
+  padding: 15px 11px 14px 12px;
+
+  h4 {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0px;
+    color: var(--grey-900, #1e1e1e);
+  }
+
+  .card-rating-star {
+    font-size: 12px;
+    color: var(--warning-300, #ffcb31);
+  }
+
+  .card-rating-val {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 21px;
+    color: var(--grey-500, #86869e);
+  }
+
+  .card-tag {
+    font-size: 12px;
+    color: var(--primary-900, #1dbf73);
+  }
+
+  .other-services-price {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: var(--base-black, #000000);
+  }
+
+  .card-heart {
+    font-size: 15px;
+    color: var(--grey-400, #8692a6);
+
+    &.red {
+      color: var(--error-500, #ff5353);
+    }
+  }
+}
+
+.suggested-services-card {
+  max-width: 292px;
+  background-color: white;
+  border-radius: 15px;
+
+  header {
+    .suggested-services-cards-details {
+      margin-block-start: 16px;
+      padding-inline: 11px 13px;
+
+      .card-rating-star {
+        font-size: 12px;
+        color: var(--warning-300, #ffcb31);
+      }
+
+      .card-rating-val {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 21px;
+        color: var(--grey-500, #86869e);
+      }
+
+      .suggested-services-price {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0.005em;
+        text-align: center;
+        color: #8692a6;
+      }
+    }
+
+    .card-heart {
+      aspect-ratio: 1;
+      width: 42px;
+      background-color: white;
+      border-radius: 50%;
+      color: #8692a6;
+      display: grid;
+      place-items: center;
+      top: 18px;
+      left: 11px;
+
+      &.red {
+        color: var(--error-500, #ff5353);
+      }
+    }
+  }
+
+  footer {
+    padding: 20px 13px 19px 11px;
+
+    .service-profile {
+      gap: 10px;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+
+      span {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14px;
+        color: #000000;
+      }
+    }
+    .card-tag {
+      color: var(--primary-900, #1dbf73);
+      font-size: 22px;
+    }
+    .other-services-price {
+      font-weight: 600;
+      color: var(--base-black, #000000);
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.005em;
+    }
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+  }
+}
+
+.suggested-service-title {
+  margin-bottom: 0;
+}
+
+.suggested-services-cards {
+  gap: 21px;
+  margin-block: 24px 104px;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1232px;
+    padding: 0;
+  }
+}
