@@ -22,3 +22,42 @@ const silderDots = sliderDotsBox.querySelectorAll("button");
 profile.addEventListener("click", () => {
   menu.classList.toggle("hide");
 });
+
+// Slider buttons logic
+
+function findActiveImgIndex() {
+  return Array.from(arrOfImgs).findIndex((element) => {
+    return element.classList.contains("active");
+  });
+}
+
+function toggleButtons() {
+  setTimeout(() => {
+    const activeImgIndex = findActiveImgIndex(arrOfImgs);
+    console.log("#", activeImgIndex);
+    if (activeImgIndex === 0) {
+      prevButtonSpan.classList.add("disable");
+      prevButtonSpan.classList.remove("active");
+      nextButtonSpan.classList.add("active");
+      nextButtonSpan.classList.remove("disable");
+    } else if (activeImgIndex === arrOfImgs.length - 1) {
+      prevButtonSpan.classList.remove("disable");
+      prevButtonSpan.classList.add("active");
+      nextButtonSpan.classList.remove("active");
+      nextButtonSpan.classList.add("disable");
+    } else {
+      prevButtonSpan.classList.add("active");
+      nextButtonSpan.classList.add("active");
+      prevButtonSpan.classList.remove("disable");
+      nextButtonSpan.classList.remove("disable");
+    }
+  }, 700);
+}
+
+sliderNextBtn.addEventListener("click", toggleButtons);
+sliderPrevBtn.addEventListener("click", toggleButtons);
+
+Array.from(silderDots).forEach((dot) => {
+  dot.addEventListener("click", toggleButtons);
+});
+
