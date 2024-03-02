@@ -17,6 +17,9 @@ const prevButtonSpan = sliderPrevBtn.querySelector("span");
 const sliderDotsBox = document.getElementsByClassName("carousel-indicators")[0];
 const silderDots = sliderDotsBox.querySelectorAll("button");
 
+const selectAllBtn = document.querySelector(".select-all");
+const arrAddons = Array.from(document.getElementsByClassName("addonsbtn"));
+
 // Account Menu Logic
 
 profile.addEventListener("click", () => {
@@ -59,5 +62,23 @@ sliderPrevBtn.addEventListener("click", toggleButtons);
 
 Array.from(silderDots).forEach((dot) => {
   dot.addEventListener("click", toggleButtons);
+});
+
+// Add ons select all logic
+
+selectAllBtn.addEventListener("click", () => {
+  arrAddons.forEach((addon) => {
+    addon.setAttribute("checked", "");
+  });
+});
+
+Array.from(arrAddons).forEach((addon) => {
+  addon.addEventListener("change", () => {
+    if (!addon.hasAttribute("checked")) {
+      addon.setAttribute("checked", "");
+    } else {
+      addon.removeAttribute("checked");
+    }
+  });
 });
 
